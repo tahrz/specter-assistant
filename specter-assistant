@@ -1,0 +1,26 @@
+#!/usr/bin/env php
+<?php declare(strict_types=1);
+
+use SpecterAssistant\Application;
+use SpecterAssistant\Parameters\Rules\DynamicRequiredArgumentsRule;
+use SpecterAssistant\Services\Config;
+use SpecterAssistant\Services\Core;
+use SpecterAssistant\Services\InteractHelper;
+use SpecterAssistant\Services\Validator;
+
+require './vendor/autoload.php';
+
+
+$coreService = new Core(
+    new Config,
+    new InteractHelper
+);
+
+exit(
+        (new Application(
+            new Validator([
+                DynamicRequiredArgumentsRule::class,
+            ]),
+            $coreService
+        )
+)->run($_SERVER['argv']));

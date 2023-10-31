@@ -1,0 +1,4 @@
+parameters:
+    url: http://localhost:8080
+    delay: 25000
+    token: fooBar123:FromBotFather

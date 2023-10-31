@@ -1,0 +1,30 @@
+{
+  "name": "tahrz/specter-assistant",
+  "description": "Tool that allow you to develop webhook telegram bot on local",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Taras Ziabukhin",
+      "email": "taras.ziabukhin@gmail.com",
+      "role": "lead"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "guzzlehttp/guzzle": "^7.5",
+    "fakerphp/faker": "^1.21",
+    "nette/neon": "^3.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "SpecterAssistant\\": "src/"
+    }
+  },
+  "bin": ["specter-assistant"],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require-dev": {
+    "phpunit/phpunit": "^10.4"
+  }
+}
