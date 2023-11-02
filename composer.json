@@ -2,6 +2,11 @@
   "name": "tahrz/specter-assistant",
   "description": "Tool that allow you to develop webhook telegram bot on local",
   "type": "library",
+  "keywords": [
+    "specter-assistant",
+    "webhook",
+    "telegram"
+  ],
   "license": "MIT",
   "authors": [
     {
